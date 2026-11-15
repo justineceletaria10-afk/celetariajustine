@@ -1,0 +1,338 @@
+
+import random
+
+print("================================")
+print("     PYTHON TUTORIAL SYSTEM     ")
+print("================================")
+
+
+name = input("Enter your name: ")
+
+while True:
+
+    print("========== MAIN MENU ==========")
+    print("[1] PRELIM  ")
+    print("[2] MIDTERM ")
+    print("[3] FINALS  ")
+    print("[4] PYTHON QUIZ GAME")
+    print("[5] EXIT")
+
+    preview = input("Choose what you want to do: ")
+
+    
+    if preview == "1":
+
+        print("--- PRELIM: BASIC ---")
+        print("[1] Lesson 1")
+        print("[2] Lesson 2")
+        print("[3] Lesson 3")
+        print("[4] Lesson 4")
+        print("[5] Lesson 5")
+        print("[6] Lesson 6")
+        print("[7] Lesson 7")
+        print("[8] Lesson 8")
+
+        lesson = input("Choose your lesson: ")
+
+        if lesson == "1":
+            print("""
+========== LESSON 1 ==========
+WHAT IS PYTHON PROGRAMMING?
+
+Python is a popular programming
+language created by Guido van
+Rossum in 1991.
+
+It is designed to be simple,
+readable, and easy to learn.
+
+Python is used to create programs
+and different applications.
+""")
+
+        elif lesson == "2":
+            print("""
+========== LESSON 2 ==========
+WHAT IS PYTHON SYNTAX?
+
+Syntax refers to the rules for
+writing correct Python code.
+
+1. CASE-SENSITIVE
+Uppercase and lowercase letters
+are treated differently.
+
+2. INDENTATION
+Spaces organize blocks of code.
+""")
+
+        elif lesson == "3":
+            print("""
+========== LESSON 3 ==========
+PRINT STATEMENT
+
+The print() function displays
+information on the screen.
+
+Example:
+print("Hello World")
+
+Text needs quotation marks,
+but numbers do not.
+""")
+
+        elif lesson == "4":
+            print("""
+========== LESSON 4 ==========
+PYTHON COMMENTS
+
+Comments are notes in a program
+that Python ignores.
+
+Example:
+# This is a comment
+print("Hello World")
+""")
+
+        elif lesson == "5":
+            print("""
+========== LESSON 5 ==========
+VARIABLES AND CONSTANTS
+
+VARIABLES
+Store data that can change.
+
+CONSTANTS
+Store values that should remain
+unchanged.
+
+Example:
+name = "Alex"
+age = 18
+""")
+
+        elif lesson == "6":
+            print("""
+========== LESSON 6 ==========
+BASIC DATA TYPES
+
+1. int - Whole numbers
+2. float - Decimal numbers
+3. str - Text or characters
+4. bool - True or False
+""")
+
+        elif lesson == "7":
+            print("""
+========== LESSON 7 ==========
+ARITHMETIC OPERATORS
+
+Arithmetic operators perform
+mathematical calculations.
+
++ Addition
+- Subtraction
+* Multiplication
+/ Division
+% Modulus
+""")
+
+        elif lesson == "8":
+            print("""
+========== LESSON 8 ==========
+BASIC INPUT AND OUTPUT
+
+input() receives information
+from the user.
+
+print() displays information
+on the screen.
+""")
+
+        else:
+            print("Invalid lesson!")
+
+    
+    elif preview == "2":
+
+        print("--- MIDTERM ---")
+        print("[1] Lesson 9")
+        print("[2] Lesson 10")
+
+        lesson = input("Choose your lesson: ")
+
+        if lesson == "1":
+            print("""
+========== LESSON 9 ==========
+CONDITIONAL STATEMENTS
+
+Conditional statements allow
+programs to make decisions.
+
+1. if - Checks a condition.
+2. elif - Checks another condition.
+3. else - Runs if conditions
+are False.
+""")
+
+        elif lesson == "2":
+            print("""
+========== LESSON 10 ==========
+LOGICAL OPERATORS
+
+Logical operators combine
+or reverse conditions.
+
+1. AND - Both must be True.
+2. OR - At least one is True.
+3. NOT - Reverses a Boolean value.
+""")
+
+        else:
+            print("Invalid lesson!")
+
+   
+    elif preview == "3":
+
+        print("--- FINALS ---")
+        print("[1] Lesson 11")
+
+        lesson = input("Choose your lesson: ")
+
+        if lesson == "1":
+            print("""
+========== LESSON 11 ==========
+INTRODUCTION TO LOOPS
+
+Loops repeat a block of code
+multiple times.
+
+TYPES OF LOOPS:
+
+1. FOR LOOP
+Repeats code for a sequence
+or specific number of times.
+
+2. WHILE LOOP
+Repeats code while a condition
+remains True.
+""")
+
+        else:
+            print("Invalid lesson!")
+
+    
+    elif preview == "4":
+
+        print("================================")
+        print("       PYTHON QUIZ CHALLENGE")
+        print("================================")
+        print("Player:", name)
+        print("Test your knowledge from")
+        print("PRELIM to FINALS!")
+        print("--------------------------------")
+
+        questions = [
+            ["Who created Python?",
+             ["A. Bill Gates", "B. Guido van Rossum",
+              "C. Mark Zuckerberg", "D. Steve Jobs"], "B"],
+
+            ["What does Python syntax refer to?",
+             ["A. Rules for writing code", "B. Computer speed",
+              "C. Text color", "D. Program size"], "A"],
+
+            ["Which function displays output?",
+             ["A. input()", "B. print()",
+              "C. type()", "D. int()"], "B"],
+
+            ["Python ignores comments during execution.",
+             ["A. True", "B. False"], "A"],
+
+            ["What do variables store?",
+             ["A. Data that can change", "B. Only numbers",
+              "C. Only text", "D. Program errors"], "A"],
+
+            ["Which is a basic Python data type?",
+             ["A. int", "B. print", "C. input", "D. loop"], "A"],
+
+            ["Which symbol represents multiplication?",
+             ["A. +", "B. -", "C. *", "D. /"], "C"],
+
+            ["Which function receives user input?",
+             ["A. print()", "B. input()",
+              "C. float()", "D. type()"], "B"],
+
+            ["Which statement checks another condition?",
+             ["A. else", "B. elif",
+              "C. while", "D. for"], "B"],
+
+            ["OR returns True when at least one condition is True.",
+             ["A. True", "B. False"], "A"],
+
+            ["Which loop repeats through a sequence?",
+             ["A. if", "B. for",
+              "C. else", "D. print"], "B"]
+        ]
+
+        random.shuffle(questions)
+
+        score = 0
+        number = 1
+
+        for q in questions:
+
+            print("\n----------------------------")
+            print("QUESTION", number)
+            print(q[0])
+
+            for option in q[1]:
+                print(option)
+
+            answer = input("Your answer: ").upper()
+
+            if answer == q[2]:
+                print("CORRECT! +1 POINT")
+                score += 1
+
+            else:
+                print("WRONG ANSWER!")
+                print("Correct answer:", q[2])
+
+            number += 1
+
+        print("\n================================")
+        print("          QUIZ RESULTS")
+        print("================================")
+        print("Player:", name)
+        print("Final Score:", score, "/ 11")
+
+        if score == 11:
+            print("PERFECT SCORE!")
+            print("YOU ARE A PYTHON MASTER!")
+
+        elif score >= 8:
+            print("GREAT JOB!")
+            print("YOU KNOW YOUR PYTHON!")
+
+        elif score >= 5:
+            print("GOOD TRY!")
+            print("KEEP PRACTICING!")
+
+        else:
+            print("DON'T GIVE UP!")
+            print("REVIEW YOUR LESSONS!")
+
+        print("================================")
+
+    
+    elif preview == "5":
+
+        print("================================")
+        print(" THANK YOU FOR USING THE SYSTEM! ")
+        print("================================")
+        print("Keep learning Python!")
+        break
+
+    else:
+        print("\nInvalid choice!")
+        print("Please choose from 1 to 5.")
