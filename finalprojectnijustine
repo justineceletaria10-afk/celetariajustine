@@ -20,7 +20,7 @@ while True:
     preview = input("Choose what you want to do: ")
 
     
-    if preview == "1":
+    if prev == "1":
 
         print("--- PRELIM: BASIC ---")
         print("[1] Lesson 1")
@@ -153,7 +153,7 @@ on the screen.
             print("Invalid lesson!")
 
     
-    elif preview == "2":
+    elif prev == "2":
 
         print("--- MIDTERM ---")
         print("[1] Lesson 9")
@@ -192,7 +192,7 @@ or reverse conditions.
             print("Invalid lesson!")
 
    
-    elif preview == "3":
+    elif prev == "3":
 
         print("--- FINALS ---")
         print("[1] Lesson 11")
@@ -222,7 +222,7 @@ remains True.
             print("Invalid lesson!")
 
     
-    elif preview == "4":
+    elif prev == "4":
 
         print("================================")
         print("       PYTHON QUIZ CHALLENGE")
@@ -307,25 +307,24 @@ remains True.
         print("Final Score:", score, "/ 11")
 
         if score == 11:
-            print("PERFECT SCORE!")
-            print("YOU ARE A PYTHON MASTER!")
+            print("NICE ONE!!")
+            
 
         elif score >= 8:
-            print("GREAT JOB!")
-            print("YOU KNOW YOUR PYTHON!")
+            print("PASADO PA")
+            
 
         elif score >= 5:
-            print("GOOD TRY!")
-            print("KEEP PRACTICING!")
+            print("NICE TRY LANG")
+            
 
         else:
-            print("DON'T GIVE UP!")
-            print("REVIEW YOUR LESSONS!")
+            print("REVIEW REVIEW DIN BOI")
 
         print("================================")
 
     
-    elif preview == "5":
+    elif prev == "5":
 
         print("================================")
         print(" THANK YOU FOR USING THE SYSTEM! ")
