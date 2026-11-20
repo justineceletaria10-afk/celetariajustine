@@ -14,10 +14,10 @@ while True:
     print("[1] PRELIM  ")
     print("[2] MIDTERM ")
     print("[3] FINALS  ")
-    print("[4] PYTHON QUIZ GAME")
+    print("[4] PYTHON QUIZ")
     print("[5] EXIT")
 
-    prev = input("Choose what you want to do: ")
+    prev = input("Choose what do you want to learn: ")
 
     
     if prev == "1":
