@@ -1,10 +1,8 @@
-
 import random
 
 print("================================")
 print("     PYTHON TUTORIAL SYSTEM     ")
 print("================================")
-
 
 name = input("Enter your name: ")
 
@@ -19,18 +17,17 @@ while True:
 
     prev = input("Choose what do you want to learn: ")
 
-    
     if prev == "1":
 
         print("--- PRELIM: BASIC ---")
-        print("[1] Lesson 1")
-        print("[2] Lesson 2")
-        print("[3] Lesson 3")
-        print("[4] Lesson 4")
-        print("[5] Lesson 5")
-        print("[6] Lesson 6")
-        print("[7] Lesson 7")
-        print("[8] Lesson 8")
+        print("[1] Lesson 1 Introduction to Programming")
+        print("[2] Lesson 2 Baic Syntax")
+        print("[3] Lesson 3 Print Statement")
+        print("[4] Lesson 4 Python Comments")
+        print("[5] Lesson 5 Variables, Constant, and Data Types")
+        print("[6] Lesson 6 Basic Data Types")
+        print("[7] Lesson 7 Arithmetic Operators And Expression")
+        print("[8] Lesson 8 Basic Input and Output")
 
         lesson = input("Choose your lesson: ")
 
@@ -114,7 +111,7 @@ age = 18
         elif lesson == "6":
             print("""
 ========== LESSON 6 ==========
-BASIC DATA TYPES
+BASIC DATA TYPES IN PYTHON
 
 1. int - Whole numbers
 2. float - Decimal numbers
@@ -152,12 +149,12 @@ on the screen.
         else:
             print("Invalid lesson!")
 
-    
+
     elif prev == "2":
 
         print("--- MIDTERM ---")
-        print("[1] Lesson 9")
-        print("[2] Lesson 10")
+        print("[1] Lesson 9 Conditional Statements")
+        print("[2] Lesson 10 Logical Operators")
 
         lesson = input("Choose your lesson: ")
 
@@ -191,11 +188,11 @@ or reverse conditions.
         else:
             print("Invalid lesson!")
 
-   
+
     elif prev == "3":
 
         print("--- FINALS ---")
-        print("[1] Lesson 11")
+        print("[1] Lesson 11 Introduction to Iteration And Loops")
 
         lesson = input("Choose your lesson: ")
 
@@ -221,7 +218,7 @@ remains True.
         else:
             print("Invalid lesson!")
 
-    
+
     elif prev == "4":
 
         print("================================")
@@ -308,22 +305,22 @@ remains True.
 
         if score == 11:
             print("NICE ONE!!")
-            
+
 
         elif score >= 8:
             print("PASADO PA")
-            
+
 
         elif score >= 5:
             print("NICE TRY LANG")
-            
+
 
         else:
             print("REVIEW REVIEW DIN BOI")
 
         print("================================")
 
-    
+
     elif prev == "5":
 
         print("================================")
