@@ -17,7 +17,7 @@ while True:
     print("[4] PYTHON QUIZ GAME")
     print("[5] EXIT")
 
-    preview = input("Choose what you want to do: ")
+    prev = input("Choose what you want to do: ")
 
     
     if prev == "1":
@@ -329,7 +329,6 @@ remains True.
         print("================================")
         print(" THANK YOU FOR USING THE SYSTEM! ")
         print("================================")
-        print("Keep learning Python!")
         break
 
     else:
